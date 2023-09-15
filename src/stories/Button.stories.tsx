@@ -30,6 +30,7 @@ export const Colors: ComponentStory<typeof Button> = () => (
     <Button variant="contained" color="secondary" label="Secondary" />
     <Button variant="contained" color="success" label="Success" />
     <Button variant="contained" color="error" label="Error" />
+    <Button variant="contained" color="error" label="Info" />
   </Stack>
 );
 
