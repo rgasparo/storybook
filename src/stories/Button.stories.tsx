@@ -17,10 +17,12 @@ Playground.args = {
 };
 
 export const Variants: ComponentStory<typeof Button> = () => (
-  <Stack spacing={2} maxWidth={300}>
-    <Button variant="text" label="Text Button" />
-    <Button variant="contained" label="Contained Button" />
+  <Stack spacing={2} maxWidth={320}>
+    <Button color="primary" variant="contained" label="Contained Button" />
     <Button variant="outlined" label="Outlined Button" />
+    <Button variant="text" label="Text Button" />
+    <Button label="Disabled Button" disabled/>
+    <Button variant="outlined" fullWidth label="fullWidth button"/>
   </Stack>
 );
 
@@ -30,7 +32,7 @@ export const Colors: ComponentStory<typeof Button> = () => (
     <Button variant="contained" color="secondary" label="Secondary" />
     <Button variant="contained" color="success" label="Success" />
     <Button variant="contained" color="error" label="Error" />
-    <Button variant="contained" color="error" label="Info" />
+    <Button variant="contained" color="info" label="Info" />
   </Stack>
 );
 

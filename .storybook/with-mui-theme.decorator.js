@@ -1,7 +1,9 @@
 import { useMemo } from "react";
 import { CssBaseline, ThemeProvider } from "@mui/material";
+import stylesV2 from './themes/styles-v2'
+import GlobalStyles from '@mui/material/GlobalStyles'
 
-import { themes } from '../src/themes';
+import { themes } from './themes';
 
 export const withMuiTheme = (Story, context) => {
     const { theme: themeKey } = context.globals;
@@ -13,6 +15,7 @@ export const withMuiTheme = (Story, context) => {
       <ThemeProvider theme={theme}>
       <CssBaseline/>
       <Story/>
+      <GlobalStyles styles={stylesV2} />
     </ThemeProvider>
     );
   };
